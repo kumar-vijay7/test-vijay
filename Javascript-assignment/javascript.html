@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body onload="jsoncreate()">
+    <div class="container border border-secondary p-5 my-5 w-50">   
+    <button class="btn btn-danger" onclick="SimpleInterest()">Simple Interest</button>
+    <button class="btn btn-success"onclick="Palindrome()">Palindrome check</button>
+    <button class="btn btn-primary" onclick="Area()">Area of Circle</button>
+    <button class="btn btn-secondary" onclick="objectCopy()">Copy object on console</button>
+    </div>
+<div class="container my-3  w-50">
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-info " onclick="show()">ALL Employee</button>
+            <button class="btn btn-warning " onclick="salarygreater()">Salary>5000</button>
+            <button class="btn btn-danger " onclick="agegroup()">Same Age</button>
+            <button class="btn btn-secondary " onclick="increment()">Increment</button>            
+        </div>
+        <div class="card-body">
+            <p id="all"></p>
+            <p id="less"></p>
+            <h4>Group</h6>
+            <div class="container" id="group">
+                
+            </div>
+            <h4>Increment</h6>
+            <div class="container" id="increment">
+               
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.exe.config
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.exe
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.pdb
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\obj\Debug\IntroductionToCsharp.csprojAssemblyReference.cache
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\obj\Debug\IntroductionToCsharp.exe
+C:\Users\Vijay Kumar\source\repos\IntroductionToCsharp\IntroductionToCsharp\obj\Debug\IntroductionToCsharp.pdb

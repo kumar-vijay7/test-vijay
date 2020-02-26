@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Bootstrap Form</title>
+    <style>.custom-file-input:lang(en) ~ .custom-file-label::after {  content: "Choose File";}</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row border-bottom border-secondary" style="color:#36A3A4 ;">
+            <div class="col-12 col-md-8 ">
+                <h2 class="pt-3" >TO The New</h1>
+            </div>
+            <div class="col-12 col-md-4  ">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navres" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon myicon border border-secondary bg-dark"></span>
+                    </button>
+                 <div class="collapse navbar-collapse" id="navres">
+                 <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#36A3A4" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color:#36A3A4" href="#">Quick Help</a>
+                      </li>
+                 </ul>
+                </div>
+                </nav> 
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 w-50">
+    <div class="card">
+        <h4 class="card-header text-white py-4" style="background-color: #BCC3CA;">
+            <strong>Bug Report</strong>
+        </h4>
+        <div class="card-body">
+            <form class="text-left text-secondary">
+                <div class="form-group">
+                    <label for="title">Title:*</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:*</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <div class="form-group" >
+                    <label for="os">Operating System:</label>
+                    <select class="form-control text-white" id="os" style="background-color: #3CBC9C;">
+                      <option>Window Xp</option>
+                      <option>ubuntu</option>
+                      <option>Mac</option>
+                      <option>Window 10</option>
+                    </select>
+                </div>
+                <div class="form-group" >
+                    <label for="products">Products:*</label>
+                    <select class="form-control text-white" id="products" style="background-color: #3CBC9C;">
+                      <option>Formoid</option>
+                      <option>Office</option>
+                    </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="ver">Version:*</label>
+                    <input type="text" class="form-control w-25 " id="ver">
+                </div>
+                <div class="form-group">
+                    <label>License:</label><br>
+                    <div class="custom-control custom-radio custom-control-inline mr-5">
+                        <input type="radio" class="custom-control-input" id="free" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label" for="free">Free</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-5">
+                        <input type="radio" class="custom-control-input" id="Business" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label" for="Business">Business</label>
+                      </div>
+                      
+                </div>
+                <div class="form-group" >
+                    <label for="severty">Severity:</label>
+                    <select class="form-control text-white" id="severty" style="background-color: #3CBC9C;">
+                      <option>Critical</option>
+                      <option>Moderate</option>
+                      <option>Low</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="file">Attachments:</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="file">
+                        <label class="custom-file-label" for="file">No File Selected</label>
+                      </div>
+                </div>
+            </form>
+        </div>
+        <h5 class="card-footer">
+            <button class="btn  btn-outline-info btn-rounded text-white float-right" style="background-color: #3CBC9C;"type="submit">Send</button>
+
+        </h5>
+
+    </div>
+</div>
+</body>
+</html>

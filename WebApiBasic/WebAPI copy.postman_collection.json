@@ -1,0 +1,541 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WebAPI copy",
+		"_postman_id": "20a02391-ef0e-fc9b-9653-68ce03cd1641",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:64973/api/index/PutData",
+			"request": {
+				"url": "http://localhost:64973/api/index/PutData",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"EMP_Name\":\"vijay\",\n\t\"SALARY\":15000\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "218909fe-deb2-44e7-84b1-d0d52b906a57",
+					"name": "http://localhost:64973/api/index/PutData",
+					"originalRequest": {
+						"url": "http://localhost:64973/api/index/PutData",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"EMP_Name\":\"vijay\",\n\t\"SALARY\":15000\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 11:10:41 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcVmlqYXkgS3VtYXJcc291cmNlXHJlcG9zXFdlYkFwaURlbW9cV2ViQXBpXGFwaVxpbmRleFxQdXREYXRh?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 37,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:64973/api/index/PostSingleData",
+			"request": {
+				"url": "http://localhost:64973/api/index/PostSingleData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"EMP_Name\":\"vijay\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d5baeb6e-8012-42dd-abc2-117802079a04",
+					"name": "http://localhost:64973/api/index/PostSingleData",
+					"originalRequest": {
+						"url": "http://localhost:64973/api/index/PostSingleData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"EMP_Name\":\"vijay\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "136",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 11:10:52 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcVmlqYXkgS3VtYXJcc291cmNlXHJlcG9zXFdlYkFwaURlbW9cV2ViQXBpXGFwaVxpbmRleFxQb3N0U2luZ2xlRGF0YQ==?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 36,
+					"body": "{\"Table\":[{\"EMP_ID\":105,\"EMP_Name\":\"Vijay\",\"EMP_DOB\":\"1993-11-22T00:00:00\",\"EMP_SALARY\":15000.0000,\"Manager_Id\":103,\"IsTrainer\":false}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:64973/api/index/DeleteData",
+			"request": {
+				"url": "http://localhost:64973/api/index/DeleteData",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"EMP_Name\": \"komal\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "127a8fc9-f290-4635-becb-eb58f1a1537a",
+					"name": "http://localhost:64973/api/index/DeleteData",
+					"originalRequest": {
+						"url": "http://localhost:64973/api/index/DeleteData",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"EMP_Name\": \"komal\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "5",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 11:11:16 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcVmlqYXkgS3VtYXJcc291cmNlXHJlcG9zXFdlYkFwaURlbW9cV2ViQXBpXGFwaVxpbmRleFxEZWxldGVEYXRh?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 9117,
+					"body": "false"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:64973/api/index/Show",
+			"request": {
+				"url": "http://localhost:64973/api/index/Show",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "0bedf6ec-ed46-48b0-9832-1b36d807f3b9",
+					"name": "http://localhost:64973/api/index/Show",
+					"originalRequest": {
+						"url": "http://localhost:64973/api/index/Show",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1767",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 11:11:34 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcVmlqYXkgS3VtYXJcc291cmNlXHJlcG9zXFdlYkFwaURlbW9cV2ViQXBpXGFwaVxpbmRleFxTaG93?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 7723,
+					"body": "{\"Table\":[{\"EMP_ID\":100,\"EMP_Name\":\"Sachin\",\"EMP_DOB\":\"1985-01-01T00:00:00\",\"EMP_SALARY\":20000.0000,\"Manager_Id\":null,\"IsTrainer\":true},{\"EMP_ID\":101,\"EMP_Name\":\"Ashish\",\"EMP_DOB\":\"1987-05-21T00:00:00\",\"EMP_SALARY\":18000.0000,\"Manager_Id\":100,\"IsTrainer\":true},{\"EMP_ID\":102,\"EMP_Name\":\"Sakshi\",\"EMP_DOB\":\"1989-06-22T00:00:00\",\"EMP_SALARY\":16000.0000,\"Manager_Id\":100,\"IsTrainer\":true},{\"EMP_ID\":103,\"EMP_Name\":\"Ritesh\",\"EMP_DOB\":\"1990-01-22T00:00:00\",\"EMP_SALARY\":12000.0000,\"Manager_Id\":100,\"IsTrainer\":true},{\"EMP_ID\":105,\"EMP_Name\":\"Vijay\",\"EMP_DOB\":\"1993-11-22T00:00:00\",\"EMP_SALARY\":15000.0000,\"Manager_Id\":103,\"IsTrainer\":false},{\"EMP_ID\":106,\"EMP_Name\":\"Latika\",\"EMP_DOB\":\"1996-07-20T00:00:00\",\"EMP_SALARY\":11000.0000,\"Manager_Id\":101,\"IsTrainer\":false},{\"EMP_ID\":107,\"EMP_Name\":\"Abhishek\",\"EMP_DOB\":\"1998-08-18T00:00:00\",\"EMP_SALARY\":13000.0000,\"Manager_Id\":103,\"IsTrainer\":false},{\"EMP_ID\":108,\"EMP_Name\":\"Vishesh\",\"EMP_DOB\":\"1998-05-11T00:00:00\",\"EMP_SALARY\":8000.0000,\"Manager_Id\":101,\"IsTrainer\":false},{\"EMP_ID\":109,\"EMP_Name\":\"Shagun\",\"EMP_DOB\":\"1998-02-15T00:00:00\",\"EMP_SALARY\":10000.0000,\"Manager_Id\":100,\"IsTrainer\":false},{\"EMP_ID\":110,\"EMP_Name\":\"Azeem \",\"EMP_DOB\":\"1996-02-02T00:00:00\",\"EMP_SALARY\":9000.0000,\"Manager_Id\":101,\"IsTrainer\":false},{\"EMP_ID\":111,\"EMP_Name\":\"Sonal\",\"EMP_DOB\":\"1998-12-18T00:00:00\",\"EMP_SALARY\":7000.0000,\"Manager_Id\":103,\"IsTrainer\":false},{\"EMP_ID\":112,\"EMP_Name\":\"Arpit\",\"EMP_DOB\":\"1996-08-22T00:00:00\",\"EMP_SALARY\":11000.0000,\"Manager_Id\":102,\"IsTrainer\":false},{\"EMP_ID\":113,\"EMP_Name\":\"Neha \",\"EMP_DOB\":\"1995-08-07T00:00:00\",\"EMP_SALARY\":14000.0000,\"Manager_Id\":102,\"IsTrainer\":false},{\"EMP_ID\":114,\"EMP_Name\":\"Punita\",\"EMP_DOB\":\"1998-06-22T00:00:00\",\"EMP_SALARY\":7000.0000,\"Manager_Id\":102,\"IsTrainer\":false}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:64973/api/index/PostData",
+			"request": {
+				"url": "http://localhost:64973/api/index/PostData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"EMP_ID\": 201,\n    \"EMP_Name\": \"Tushar Soni\",\n    \"EMP_DOB\": \"1985-01-22T00:00:00\",\n    \"EMP_SALARY\": 21000,\n    \"Manager_Id\": null,\n    \"IsTrainer\": true\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "5a6f0f31-c870-43d5-b791-04f74a2cd856",
+					"name": "http://localhost:64973/api/index/PostData",
+					"originalRequest": {
+						"url": "http://localhost:64973/api/index/PostData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"EMP_Name\": \"Tushar\",\n    \"EMP_DOB\": \"1985-01-22T00:00:00\",\n    \"EMP_SALARY\": 21000,\n    \"Manager_Id\": null,\n    \"IsTrainer\": true\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 11:12:00 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcVmlqYXkgS3VtYXJcc291cmNlXHJlcG9zXFdlYkFwaURlbW9cV2ViQXBpXGFwaVxpbmRleFxQb3N0RGF0YQ==?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 58,
+					"body": "true"
+				}
+			]
+		}
+	]
+}

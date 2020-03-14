@@ -1,0 +1,406 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WebAPIAdvance copy",
+		"_postman_id": "f2908c53-82ac-37be-fa37-af3157c0ec9f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:57171/api/Employee/GetEmployeeData",
+			"request": {
+				"url": "http://localhost:57171/api/Employee/GetEmployeeData",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"emP_Name\": \"Sach\"\n            \n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "594b34cb-f945-4a8a-b347-0b8c3602be49",
+					"name": "http://localhost:57171/api/Employee/GetEmployeeData",
+					"originalRequest": {
+						"url": "http://localhost:57171/api/Employee/GetEmployeeData",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"emP_Name\": \"Sach\"\n            \n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1886",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Mar 2020 09:20:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 73,
+					"body": "{\"table\":[{\"emP_ID\":100,\"emP_Name\":\"Sachin\",\"emP_DOB\":\"1985-01-01T00:00:00\",\"emP_SALARY\":20000.0000,\"manager_Id\":null,\"isTrainer\":true},{\"emP_ID\":101,\"emP_Name\":\"Ashish\",\"emP_DOB\":\"1987-05-21T00:00:00\",\"emP_SALARY\":18000.0000,\"manager_Id\":100,\"isTrainer\":true},{\"emP_ID\":102,\"emP_Name\":\"Sakshi\",\"emP_DOB\":\"1989-06-22T00:00:00\",\"emP_SALARY\":16000.0000,\"manager_Id\":100,\"isTrainer\":true},{\"emP_ID\":103,\"emP_Name\":\"Ritesh\",\"emP_DOB\":\"1990-01-22T00:00:00\",\"emP_SALARY\":12000.0000,\"manager_Id\":100,\"isTrainer\":true},{\"emP_ID\":105,\"emP_Name\":\"Vijay\",\"emP_DOB\":\"1993-11-22T00:00:00\",\"emP_SALARY\":15000.0000,\"manager_Id\":103,\"isTrainer\":false},{\"emP_ID\":106,\"emP_Name\":\"Latika\",\"emP_DOB\":\"1996-07-20T00:00:00\",\"emP_SALARY\":11000.0000,\"manager_Id\":101,\"isTrainer\":false},{\"emP_ID\":107,\"emP_Name\":\"Abhishek\",\"emP_DOB\":\"1998-08-18T00:00:00\",\"emP_SALARY\":13000.0000,\"manager_Id\":103,\"isTrainer\":false},{\"emP_ID\":108,\"emP_Name\":\"Vishesh\",\"emP_DOB\":\"1998-05-11T00:00:00\",\"emP_SALARY\":8000.0000,\"manager_Id\":101,\"isTrainer\":false},{\"emP_ID\":109,\"emP_Name\":\"Shagun\",\"emP_DOB\":\"1998-02-15T00:00:00\",\"emP_SALARY\":10000.0000,\"manager_Id\":100,\"isTrainer\":false},{\"emP_ID\":110,\"emP_Name\":\"Azeem \",\"emP_DOB\":\"1996-02-02T00:00:00\",\"emP_SALARY\":9000.0000,\"manager_Id\":101,\"isTrainer\":false},{\"emP_ID\":111,\"emP_Name\":\"Sonal\",\"emP_DOB\":\"1998-12-18T00:00:00\",\"emP_SALARY\":7000.0000,\"manager_Id\":103,\"isTrainer\":false},{\"emP_ID\":112,\"emP_Name\":\"Arpit\",\"emP_DOB\":\"1996-08-22T00:00:00\",\"emP_SALARY\":11000.0000,\"manager_Id\":102,\"isTrainer\":false},{\"emP_ID\":113,\"emP_Name\":\"Neha \",\"emP_DOB\":\"1995-08-07T00:00:00\",\"emP_SALARY\":14000.0000,\"manager_Id\":102,\"isTrainer\":false},{\"emP_ID\":114,\"emP_Name\":\"Punita\",\"emP_DOB\":\"1998-06-22T00:00:00\",\"emP_SALARY\":7000.0000,\"manager_Id\":102,\"isTrainer\":false},{\"emP_ID\":128,\"emP_Name\":\"Tushar\",\"emP_DOB\":\"1985-01-22T00:00:00\",\"emP_SALARY\":0.0000,\"manager_Id\":0,\"isTrainer\":true}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57171/api/Employee/DeleteData",
+			"request": {
+				"url": "http://localhost:57171/api/Employee/DeleteData",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"emP_Name\": \"Sach\"\n            \n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "5dcf8c25-3056-481f-9900-d2f716f23b95",
+					"name": "http://localhost:57171/api/Employee/DeleteData",
+					"originalRequest": {
+						"url": "http://localhost:57171/api/Employee/DeleteData",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"emP_Name\": \"Sach\"\n            \n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Mar 2020 09:22:41 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 85,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57171/api/Employee/PutData",
+			"request": {
+				"url": "http://localhost:57171/api/Employee/PutData",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"emP_Name\": \"Sach\",\n            \"SALARY\": 25000\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7f944f4a-305e-4ca8-ac93-98f0f245b430",
+					"name": "http://localhost:57171/api/Employee/PutData",
+					"originalRequest": {
+						"url": "http://localhost:57171/api/Employee/PutData",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"emP_Name\": \"Sach\",\n            \"SALARY\": 25000\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Mar 2020 09:21:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 6818,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57171/api/Employee/PostData",
+			"request": {
+				"url": "http://localhost:57171/api/Employee/PostData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"emP_ID\": 1000,\n            \"emP_Name\": \"Sach\",\n            \"emP_DOB\": \"1985-01-01T00:00:00\",\n            \"emP_SALARY\": 20000,\n            \"manager_Id\": 1,\n            \"isTrainer\": true\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "f0688b51-e2f3-4f45-8a34-31d1a8221535",
+					"name": "http://localhost:57171/api/Employee/PostData",
+					"originalRequest": {
+						"url": "http://localhost:57171/api/Employee/PostData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"emP_ID\": 1000,\n            \"emP_Name\": \"Sach\",\n            \"emP_DOB\": \"1985-01-01T00:00:00\",\n            \"emP_SALARY\": 20000,\n            \"manager_Id\": 1,\n            \"isTrainer\": true\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Mar 2020 09:21:15 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 114,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57171/api/Employee/PostSingleData",
+			"request": {
+				"url": "http://localhost:57171/api/Employee/PostSingleData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"emp_Name\":\"Sachin\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "bb20aed9-5975-4a67-82a4-39910cbe6d65",
+					"name": "http://localhost:57171/api/Employee/PostSingleData",
+					"originalRequest": {
+						"url": "http://localhost:57171/api/Employee/PostSingleData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"emp_Name\":\"Sachin\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "137",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Mar 2020 09:21:04 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 116,
+					"body": "{\"table\":[{\"emP_ID\":100,\"emP_Name\":\"Sachin\",\"emP_DOB\":\"1985-01-01T00:00:00\",\"emP_SALARY\":20000.0000,\"manager_Id\":null,\"isTrainer\":true}]}"
+				}
+			]
+		}
+	]
+}

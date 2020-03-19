@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "EntityFramwrokDBFirst",
+		"_postman_id": "f5071a0c-f0d5-2e29-c491-eb35f7a0b152",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44328/api/Home/GetCustomerOrder",
+			"request": {
+				"url": "https://localhost:44328/api/Home/GetCustomerOrder",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44328/api/Home/GetSingleData/6",
+			"request": {
+				"url": "https://localhost:44328/api/Home/GetSingleData/6",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44328/api/Home/PostData",
+			"request": {
+				"url": "https://localhost:44328/api/Home/PostData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_customer\":{\n\n        \"customerName\": \"vivek Kumar\",\n        \"customerPhone\": \"9555559789\",\n        \"customerEmail\": \"vivekk812@gmail.com\",\n        \"customerAddresss\": \"Delhi\"\n        },\n\t\"_orders\": \n         {\n         \t\t\"productId\": 1,\n                \"customerId\": 6,\n                \"quantity\": 2\n\n               }\n            \n    }\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44328/api/Home/PutData",
+			"request": {
+				"url": "https://localhost:44328/api/Home/PutData",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_customer\":{\n\t\t\n        \"customerName\": \"vivek Kumar\",\n        \"customerPhone\": \"9555559789\",\n        \"customerEmail\": \"vivekk812@gmail.com\",\n        \"customerAddresss\": \"Delhi\"\n        },\n\t\t\"_orders\": \n         {\n                 \n                \"productId\": 1,\n                \"customerId\": 6,\n                \"quantity\": 2\n\n         }\n            \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44328/api/Home/DeleteData/15",
+			"request": {
+				"url": "https://localhost:44328/api/Home/DeleteData/15",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

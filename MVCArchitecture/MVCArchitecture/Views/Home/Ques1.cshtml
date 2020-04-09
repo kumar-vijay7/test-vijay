@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Ques1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+    <link href="~/Content/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+    <div class="container p-2">
+        <h2>Explain MVC and the benefit of MVC.</h2>
+        <p class="text-justify">
+            MVC stands for Model View Controller it is an architecture for developing large Web Application
+            in Mvc Where M stands for the models it contains the business logic and V stands for View which represents the
+            User Interface of the Web Application and C stands for the Controller which control the model and view. when the user enter the
+            url for the page url contains the controller information.
+        </p>
+        <div class="container">
+            <img src="~/Content/images/MVC-basic.svg.png" class="rounded" alt="mvc image">
+        </div>
+        <p class="text-justify">
+            As you see the Above diagram view pass the user action to the controller and then controller updates the model(model is a class which directly deal with the database)
+            then model notify the controller and controller updates the view.
+        </p>
+        <h2>Benefits of MVC</h2>
+
+        <p>Application Development become very fast</p>
+        <p>Seperation of Concerns Achieve ui,model and controller are in different folder</p>
+        <p>Easy to update the existing Applications</p>
+        <p>Multiple Developers can work collabratively</p>
+    </div>
+

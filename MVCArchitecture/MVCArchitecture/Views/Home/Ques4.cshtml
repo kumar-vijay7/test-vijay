@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Ques4";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container p-4">
+        <h2>Why we use App_Start, App_Data and Shared Folder.</h2>
+        <div class="container my-3">
+            <img src="~/Content/images/MVC-Folder-structure.png" class="rounded" alt="mvc image">
+        </div>
+        <h3>App_Start</h3>
+        <p class="text-justify">
+            App_start folder contain all the classes which is executed when the application starts. when we create the mvc project
+            by default RouteConfig.cs file is created. which define the routing for the application.
+            similarly we can add BundleConfig.cs file which is used for the bundling the css, bootstrap, js file and FilterConfig.cs etc files.
+
+        </p>
+        <h3>App_Data</h3>
+        <p class="text-jsutif">
+            App_Data Folder container all the data related files of the application like md5, xml, localDb files and Other data related files
+
+        </p>
+
+        <h3>Shared </h3>
+        <p class="text-jsutif">
+            Shared Folder container the Shared Views it container views which is share on multiple pages. it container like master pages,
+            partial pages. we can create the master view like _MasterLayout. master page container the common design which is applied to all the pages
+            master page render the other pages..
+        </p>
+    </div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Ques2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container p-2">
+        <h2>Explain MVC Life Cycle.</h2>
+        <div class="container">
+            <img src="~/Content/images/Mvc-lifecycle.png" class="rounded w-100" alt="mvc image">
+        </div>
+        <p class="text-justify font-weight-bold ">
+             MVC stands for Model View Controller. It has two life cycle <br />
+            1)Applcation LifeCycle<br />
+            2)Request & response LifeCycle<br />
+        </p>
+        <p class="text-justify">
+            <span class="font-weight-bold">
+                Application life cycle</span><br />
+                It starts when the Application Starts. Global.asax file contains the Application life cycle method
+                Application_Start(), Application_End(),Session_Start(),Session_End(). when application first starts it call the Application_Start()
+                which registered all the essential config files which is required buy the application.
+</p>
+        <p class="text-justify">
+            <span class="font-weight-bold">
+                Request & response  Life Cycle</span><br />
+                As We know that Mvc application start from routing. whenever asp.net mvc application received the request
+                it checks the request is made first time or second time if the request is first time so that route is fill into the routing table
+                then url routing module handle the route. after that request context object is created  and pass it to the mvc handler. mvc handler creates the
+                controller handler object which call the execute method it self execute method is a method of basecontroller class.
+                then Controller particular action is invoke it execute the action and result is sent to the view.
+
+
+</p>
+    </div>
+    

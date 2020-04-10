@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Ques1";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+    <div class="container p-5">
+        <h2>Explain RenderPartial, Partial and Render Action with examples.</h2>
+        <h3>RenderPartial</h3>
+        <p class="text-justify">RenderPartial is used to render the partial view. RenderPartial does not return anything it returns void
+        RenderPartial Writes the html of the partial directly to the response stream.
+        In this we dont write any action methoda to render the partial view. RenderPartial is very faster because it writes result
+        directly to the response stream. RenderPartial method is useful when the data is already in a view model.
+        for example: see the code in shared/_MasterLayout.cshtml Sidebar is rendering with the help of RenderPartial Method
+        </p>
+        <h3>Partial</h3>
+        <p class="text-justify">
+            Partial is a metod which help us to render the partial view into the main layout
+            it returns the MvcHtmlString so we can save result into the variable.
+            it renders the partial view into the html encoded string.
+            it is slow as compared to RenderPartial method
+            for example: see the code in shared/_MasterLayout.cshtml navbar is render with the help of partial method
+        </p>
+        <h3>RenderAction</h3>
+        <p class="text-justify">
+            RenderAction is also used to render the partial view it writes the result directly to the Http response stream.
+            but in this we have to create the child action to render the partial view. RenderAction method is faster because it writes the
+            result directly to the response stream.
+            for example: see the code in shared/_MasterLayout.cshtml and HomeController ChildActionOnly Footer is rendering through
+            the RenderAction
+        </p>
+
+    </div>

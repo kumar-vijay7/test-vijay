@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Ques3";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+    <div class="container">
+        <h2>Explain Render Section and CShtml function with examples.Why do we use the “Bind'' attribute in the action parameter?</h2>
+        <h3>RenderSection</h3>
+        <p class="text-justify">
+            RenderSection is an html helper method RenderSection is used when we have to show some content from the child view to
+            the mainlayout. we create the section with the section name inside the child view and pass this name into the layout
+            Html.RenderSection method.
+        </p>
+        <h3>CShtml function</h3>
+        <p class="text-jsutify">
+            CShtml function is calling here
+
+        </p>
+        <p class="text-primary">
+            @Myfunction.ShowDate()
+        </p>
+
+    </div>

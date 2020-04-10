@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BootCamp2020ModelStoreContainer" CdmEntityContainer="BootCamp2020Entities">
+    <EntitySetMapping Name="TBL_EMPLOYEES">
+      <EntityTypeMapping TypeName="BootCamp2020Model.TBL_EMPLOYEES">
+        <MappingFragment StoreEntitySet="TBL_EMPLOYEES">
+          <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+          <ScalarProperty Name="EMP_Name" ColumnName="EMP_Name" />
+          <ScalarProperty Name="EMP_DOB" ColumnName="EMP_DOB" />
+          <ScalarProperty Name="EMP_SALARY" ColumnName="EMP_SALARY" />
+          <ScalarProperty Name="Manager_Id" ColumnName="Manager_Id" />
+          <ScalarProperty Name="IsTrainer" ColumnName="IsTrainer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

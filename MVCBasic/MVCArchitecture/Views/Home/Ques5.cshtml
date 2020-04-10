@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Ques5";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div class="container p-3">
+    <h2>hat is bundling and how to use bundling in view.</h2>
+    <p class="text-justify">
+        Bundling is a concept to bundle the files into a single file and done minification of them. 
+        As we know that we use lots of cascading style sheets, javascripts files and bootstrap files. 
+        These Files may be more than one files so we have to bundle them into a single file and link that bundle file into the masterlayout.
+        For doing the Bundling we have to create a BundleConfig.cs file into the App_Start folder then register this file into the Global.axas file.
+        because as we know that Global.asax file is the starting point of mvc or any other asp.net application.
+        for example see the App_Start folder and Global.asax file as i have created the bundle.
+        we can use this in a view with the help of Scripts.Render() and Styles.Render() methods. Basically we link the styling into the head section
+        and scripts in the body end to increase the performance of the application
+    </p>
+</div>
+
+

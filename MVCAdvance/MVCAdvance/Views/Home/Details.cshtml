@@ -1,0 +1,63 @@
+﻿@model MVCAdvance.Models.EntityModel.TBL_EMPLOYEES
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+
+<div class="container m-auto">
+    <h4>TBL_EMPLOYEES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_SALARY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_SALARY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsTrainer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsTrainer)
+        </dd>
+
+    </dl>
+</div>

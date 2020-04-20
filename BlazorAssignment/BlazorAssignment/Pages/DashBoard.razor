@@ -1,0 +1,95 @@
+﻿@page "/DashBoard"
+<div class="top-row px-4">
+    <input type="button" class="btn btn-warning" value="Logout" @onclick="Logout" />
+</div>
+<div class="container">
+    @if (studentdetail == null)
+    {
+        <h1>Processing.........</h1>
+    }
+    else
+    {
+<button class="btn btn-success my-5" @onclick="AddNew">Create</button>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">StudentName</th>
+                    <th scope="col">StudentCourse</th>
+                    <th scope="col">StudentAddress</th>
+                    <th scope="col">StudentEmail</th>
+                    <th scope="col">StudentGender</th>
+                    <th scope="col">StudentPhone</th>
+                    <th scope="col">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in studentdetail)
+                {
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" Value="s" name="checkbox" />
+                        </td>
+                        <td>@item.StudentName</td>
+                        <td>@item.StudentCourse</td>
+                        <td>@item.StudentAddress</td>
+                        <td>@item.StudentEmail</td>
+                        <td>@item.StudentGender</td>
+                        <td>@item.StudentPhone</td>
+                        <td>
+                            
+                            <button class="btn btn-primary" @onclick="@(()=>Edit(item.StudentId))">Edit </button>
+                            <button class="btn btn-danger" @onclick="@(()=>Delete(item.StudentId))">Delete</button>
+
+                        </td>
+                    </tr>
+
+
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+@code{
+    public IEnumerable<TblStudent> studentdetail;
+
+    public string id { get; set; }
+    
+    protected override void OnInitialized()
+    {
+                StateHasChanged();
+        StudentLoad();
+
+        base.OnInitialized();
+    }
+   
+    public void AddNew()
+    {
+        navigate.NavigateTo("insert");
+    }
+    public void Edit(int id)
+    {
+        navigate.NavigateTo("editstudent/"+id);
+    }
+    public void Delete(int id)
+    {
+        var result = LoginService.DeleteStudent(id);
+        if (result)
+        {
+            StudentLoad();
+
+        }
+    }
+    public void Logout()
+    {
+        navigate.NavigateTo("login");
+    }
+
+    public void StudentLoad()
+    {
+        studentdetail = (LoginService.StudentDetail());
+        StateHasChanged();
+    }
+}

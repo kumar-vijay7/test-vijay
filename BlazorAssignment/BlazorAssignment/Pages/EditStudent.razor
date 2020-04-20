@@ -1,0 +1,75 @@
+﻿@page "/editstudent/{id}"
+<h3>Edit</h3>
+<EditForm Model="@InsertUser" OnValidSubmit="@StudentUpdate">
+    <div class="container">
+        <div class="card login-card">
+            <div class="row no-gutters">
+                <div class="col-md-5">
+                    <img src="/images/login.jpg" alt="student" class="login-card-img">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <div class="brand-wrapper">
+                            <img src="/images/Ttnlogo.png" alt="logo" class="logo">
+                        </div>
+                        <p class="login-card-description">Register New Student !</p>
+
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Name</label>
+                            <InputText type="text" @bind-Value="InsertUser.StudentName" id="name" class="form-control" placeholder="Student Name" />
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="gender" class="sr-only">Gender</label>
+                            <InputText type="text" @bind-Value="InsertUser.StudentGender" id="gender" class="form-control" placeholder="Gender : Male - Female" />
+                        </div>
+                        <div class="form-group">
+                            <label for="course" class="sr-only">Course</label>
+                            <InputText type="text" @bind-Value="InsertUser.StudentCourse" id="course" class="form-control" placeholder="Student Course" />
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="email" class="sr-only">Email</label>
+                            <InputText type="text" @bind-Value="InsertUser.StudentEmail" id="email" class="form-control" placeholder="Student Email" />
+                        </div>                            <div class="form-group">
+                            <label for="phone" class="sr-only">Phone</label>
+                            <InputText type="number" @bind-Value="InsertUser.StudentPhone" id="phone" class="form-control" placeholder="Student Phone" />
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="address" class="sr-only">Address</label>
+                            <InputText type="text" @bind-Value="InsertUser.StudentAddress" id="address" class="form-control" placeholder="Address" />
+                        </div>
+                        <input name="inser" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Update">
+
+                        `
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public TblStudent InsertUser;
+    [Parameter]
+    public string id { get; set; }
+    protected override void OnInitialized()
+    {
+        InsertUser = new TblStudent();
+        GetStudentbyId();
+        base.OnInitialized();
+    }
+    public void GetStudentbyId()
+    {
+        InsertUser= LoginService.StudentById(id);
+    }
+
+    public void StudentUpdate()
+    {
+        var result = LoginService.UpdateStudent(id,InsertUser);
+        if (result)
+        {
+            StateHasChanged();
+            navigate.NavigateTo("DashBoard");
+        }
+    }
+
+}

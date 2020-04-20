@@ -1,0 +1,24 @@
+﻿@page  "/question1"
+    <div class="container m-4">
+        <h3>Difference between the Blazor client-side and server-side and also explain web assembly and Signal R connection.</h3>
+        <h2>Blazor client-side</h2>
+        <p class="text-justify">
+            Blazor Client Side model is also known as Blazor WebAssembling hosting model
+            in which application directly runs on the browser. It works standalone with out need of
+            the server. Blazor WebAssembling application can run on the client side without need of the server
+            but it is optional to established the connection with the server.
+        </p>
+        <img src="/images/blazor-webassembly.png" alt="client-app" />
+        <h2>server-side</h2>
+        <p class="text-justify">
+            Blazor Server hosting model is a model in which application is run on the server.
+            In this model SignalR connection is established between the client and server.
+            for example: if you performed some calculation on the client side. the event is sent to the
+            server. server calculate the difference of html and sends the difference not the whole html code.
+            Application loads very fast.
+        </p>
+        <img src="/images/blazor-server.png" alt="server" />
+    </div>
+@code {
+
+}

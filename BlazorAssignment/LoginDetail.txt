@@ -1,0 +1,8 @@
+login detail to perform crud
+---------------------------------
+userid: Vijaykr7
+password: vijay@123
+--------------------------------
+
+Note: If you create, update, or delete after navigate to dashboard data is not 
+refreshed. so please referesh the page

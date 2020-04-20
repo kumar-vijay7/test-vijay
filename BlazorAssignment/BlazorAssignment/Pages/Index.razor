@@ -1,0 +1,12 @@
+﻿@page "/"
+    <div class="top-row px-4">
+        <input type="button" class="btn btn-warning" value="Login" @onclick="LoginCall" />
+    </div>
+<img src="/images/Bg-image.png" alt="bg-image" />
+
+@code{
+    public void LoginCall()
+    {
+        navigate.NavigateTo("login");
+    }
+}

@@ -1,0 +1,10 @@
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\bin\Debug\netcoreapp3.1\BlazorAssignment.Library.deps.json
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\bin\Debug\netcoreapp3.1\BlazorAssignment.Library.runtimeconfig.json
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\bin\Debug\netcoreapp3.1\BlazorAssignment.Library.runtimeconfig.dev.json
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\bin\Debug\netcoreapp3.1\BlazorAssignment.Library.dll
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\bin\Debug\netcoreapp3.1\BlazorAssignment.Library.pdb
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\obj\Debug\netcoreapp3.1\BlazorAssignment.Library.csprojAssemblyReference.cache
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\obj\Debug\netcoreapp3.1\BlazorAssignment.Library.AssemblyInfoInputs.cache
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\obj\Debug\netcoreapp3.1\BlazorAssignment.Library.AssemblyInfo.cs
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\obj\Debug\netcoreapp3.1\BlazorAssignment.Library.dll
+E:\BlazorAssignment\BlazorAssignment\BlazorAssignment.Library\obj\Debug\netcoreapp3.1\BlazorAssignment.Library.pdb

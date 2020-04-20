@@ -1,0 +1,18 @@
+﻿@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+@using BlazorAssignment
+@using BlazorAssignment.Shared
+@using BlazorAssignment.Library.Models.entityModels
+@using BlazorAssignment.Data.Respository
+@using BlazorAssignment.Data.Services
+@inject NavigationManager navigate
+@using Newtonsoft.Json
+@inject HttpClient  httpClient
+@inject IStudentRepository  LoginService
+@inject INavRepository navservice
+@using MatBlazor

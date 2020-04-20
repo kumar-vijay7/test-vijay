@@ -1,0 +1,48 @@
+﻿@page  "/question3"
+
+    <div class="container m-4">
+        <h2>Explain the Life cycle with example</h2>
+        <h3>There are mainly 7 lifecycle methods -</h3>
+        <img src="/images/life-cycle.png" alt="lifecycle" />
+        <h3 class="mt-4">OnInitialized()</h3>
+        <p class="text-justify">
+            This method is executed when the component gets initialized.
+            this method executed only when component gets loaded. This is mainly used to
+            initialized when the page is loaded like get the data from the services and
+            initialize the model classes
+        </p>
+        <h3>OnInitializedAsync()</h3>
+        <p class="text-justify">
+            This is a asynchronous version of the OnInitialized. This is also executed when the
+            application is loaded. This is also used to get the data from the services.
+        </p>
+        <h3>OnParametersSet()</h3>
+        <p class="text-justify">
+            his is the synchronous way of setting the parameter when the component receives the parameter from its parent component.
+            This is called when the Initialization of the component occurs.
+        </p>
+        <h3>OnParametersSetAsync()</h3>
+        <p class="text-justify">
+            This is an asynchronous way of setting the parameter when the component receives the parameter from the parent component.
+            This gets called when the initialization of the component occurs.
+        </p>
+        <h3>ShouldRender()</h3>
+        <p class="text-justify">
+            If this method returns true, so the UI is refreshed.
+            If false so no changes made in the UI. It always does the initial render.
+
+        </p>
+        <h3>OnAfterRender()</h3>
+        <p class="text-justify">
+            This method is run when the component is done with the rendering work. it
+            is used to populate the references.
+        </p>
+        <h3>OnAfterRenderAsync()</h3>
+        <p class="text-justify">
+            This method is asynchronous version of the  OnAfrerRender() which gets called when the rendering of all the references to the component is populated.
+            We can use this method to do additional initializing of the third party component.
+        </p>
+    </div>
+@code {
+
+}

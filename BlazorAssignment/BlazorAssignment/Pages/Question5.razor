@@ -1,0 +1,116 @@
+﻿@page  "/question5"
+<div id="main-cal">
+    <div class="calculator card">
+
+        <label for="calc" class="bg-dark  p-2 calclabel" >@DisplayLabel</label>
+        <input type="text" id="calc" class="calculator-screen z-depth-1" value="@Displayresult"  disabled />
+
+        <div class="calculator-keys">
+
+            <button type="button" class="operator btn btn-info button" @onclick="@(()=>Operator("+"))" value="+">+</button>
+            <button type="button" class="operator btn btn-info button" @onclick="@(()=>Operator("-"))" value="-">-</button>
+            <button type="button" class="operator btn btn-info button" @onclick="@(()=>Operator("x"))" value="*">&times;</button>
+            <button type="button" class="operator btn btn-info" @onclick="@(()=>Operator("/"))" value="/">&divide;</button>
+
+            <button type="button" value="7" class="btn btn-light waves-effect button" @onclick="@(()=>Number(7))">7</button>
+            <button type="button" value="8" class="btn btn-light waves-effect button" @onclick="@(()=>Number(8))">8</button>
+            <button type="button" value="9" class="btn btn-light waves-effect button" @onclick="@(()=>Number(9))">9</button>
+
+
+            <button type="button" value="4" class="btn btn-light waves-effect button" @onclick="@(()=>Number(4))">4</button>
+            <button type="button" value="5" class="btn btn-light waves-effect button" @onclick="@(()=>Number(5))">5</button>
+            <button type="button" value="6" class="btn btn-light waves-effect button" @onclick="@(()=>Number(6))">6</button>
+
+
+            <button type="button" value="1" class="btn btn-light waves-effect button" @onclick="@(()=>Number(1))">1</button>
+            <button type="button" value="2" class="btn btn-light waves-effect button" @onclick="@(()=>Number(2))">2</button>
+            <button type="button" value="3" class="btn btn-light waves-effect button" @onclick="@(()=>Number(3))">3</button>
+
+
+            <button type="button" value="0" class="btn btn-light waves-effect button" @onclick="@(()=>Number(0))">0</button>
+            <button type="button" class="decimal function btn btn-secondary button" value="." @onclick="@(()=>Clear())">Clr</button>
+            <button type="button" class="all-clear function btn btn-danger btn-sm button" value="all-clear" @onclick="@(()=>Delete())">Del</button>
+
+            <button type="button" class="equal-sign operator btn btn-success button" value="="@onclick="@(()=>Operation())">=</button>
+
+        </div>
+    </div>
+</div>
+@functions{
+    public string  Displayresult { get; set; } = "0";
+    public string DisplayLabel { get; set; }
+    public Double FinalResult = 0;
+    public bool isOperationPerformed = false;
+    public string Operationperformed = "";
+
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
+    public void Number(int num)
+    {
+        if ((Displayresult == "0") || (isOperationPerformed))
+            Displayresult="";
+
+        isOperationPerformed = false;
+
+        Displayresult += num.ToString();
+
+
+
+
+    }
+
+    public void Operator(string symbol)
+    {
+        if (FinalResult != 0)
+        {
+            //PerformClick();
+            Operationperformed = symbol;
+            DisplayLabel += FinalResult + " " + Operationperformed;
+
+            isOperationPerformed = true;
+        }
+        else
+        {
+
+            Operationperformed = symbol;
+            FinalResult = Double.Parse(Displayresult);
+            DisplayLabel += FinalResult + " " + Operationperformed;
+            isOperationPerformed = true;
+        }
+    }
+
+    public void Operation()
+    {
+        switch (Operationperformed)
+        {
+            case "+": Displayresult = (FinalResult + Double.Parse(Displayresult)).ToString();
+                break;
+
+            case "x": Displayresult = (FinalResult * Double.Parse(Displayresult)).ToString();
+                break;
+            case "/": Displayresult = (FinalResult / Double.Parse(Displayresult)).ToString();
+                break;
+            case "-": Displayresult = (FinalResult - Double.Parse(Displayresult)).ToString();
+                break;
+            default:
+                break;
+
+        }
+        FinalResult = Double.Parse(Displayresult);
+        DisplayLabel = "";
+
+    }
+
+    public void Delete()
+    {
+        string result=Displayresult.Remove(Displayresult.Length-1);
+        Displayresult = result;
+    }
+    public void Clear()
+    {
+        Displayresult = "";
+        FinalResult = 0;
+    }
+}

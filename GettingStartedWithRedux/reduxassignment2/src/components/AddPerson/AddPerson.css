@@ -1,0 +1,19 @@
+.AddPerson {
+    width:200px;
+    margin:auto;
+    padding:10px;
+    text-align: center;
+    margin: 30px;
+    border: 1px solid purple;
+}
+
+.AddPerson input{
+    padding:5px;
+    margin-bottom: 2px;
+}
+
+.AddPerson button{
+    background-color: green;
+    border:none;
+    padding:5px;
+}
